@@ -1,0 +1,21 @@
+/* Utils */
+
+.bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.box {
+    background-color: #006cfa;
+    border: 1px solid #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.box-purple {
+    background-color: #00e165;
+    border: 1px solid 006cfa;
+    color: #ffffff;
+    padding: 0.5rem
+}

@@ -1,0 +1,186 @@
+/* CONTAINER & ROW */
+
+.container {
+	max-width: 1170px; /* Perchè con padding laterali a 15px arrivi a 1200px*/
+	margin: 0 auto;
+}
+/* Se qualcuno (la row) ha margini laterali (right e left) negativi (ex. -15px) il suo genitore (il container) dovrà avere padding laterali (right e left) che compensino (ex. 15px) così "il margin si mangi ail padding". */
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+[class*="col-"] {
+	flex: 0 0 auto; 
+	/* Grow (0 non crescere, 1 cresci, 2 cresci prima degli altri), Shrink (0 non ridurti, 1 riduciti, 2 riduciti prima degli altri), Basis (auto, tanto viene sovrascritta dal flex-basis calc della col qui sotto!) */
+} 
+
+/* DISPLAY */
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-inline {
+	display: inline;
+}
+
+.d-inline-block {
+	display: inline-block;
+}
+
+.d-none {
+	display: none;
+}
+
+/* ALIGN */
+
+.jc-center {
+	justify-content: center;
+}
+
+.jc-space-between {
+	justify-content: space-between;
+}
+
+.jc-space-around {
+	justify-content: space-around;
+}
+
+.jc-flex-start {
+	justify-content: flex-start;
+}
+
+.jc-flex-end {
+	justify-content: flex-end;
+}
+
+.jc-space-evenly {
+	justify-content: space-evenly;
+}
+
+/* COLUMNS */
+
+.col {
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 100%;
+	/* Opzione da usare quando non posso fare i calcoli precisi con quelle qui sotto (ad esempio se voglio 5 colonne uguali tra di loro, il 12 non è divisibile per 5 quindi uso questa opzione, che "si adatta da sola"). */
+}
+
+.col-1 {
+	flex-basis: calc((100% / 12) * 1);
+	max-width: calc((100 / 12) * 1);
+}
+
+.col-2 {
+	flex-basis: calc((100% / 12) * 2);
+	max-width: calc((100 / 12) * 2);
+}
+
+.col-3 {
+	flex-basis: calc((100% / 12) * 3);
+	max-width: calc((100 / 12) * 3);
+}
+
+.col-4 {
+	flex-basis: calc((100% / 12) * 4);
+	max-width: calc((100 / 12) * 4);
+}
+
+.col-5 {
+	flex-basis: calc((100% / 12) * 5);
+	max-width: calc((100 / 12) * 5);
+}
+
+.col-6 {
+	flex-basis: calc((100% / 12) * 6);
+	max-width: calc((100 / 12) * 6);
+}
+
+.col-7 {
+	flex-basis: calc((100% / 12) * 7);
+	max-width: calc((100 / 12) * 7);
+}
+
+.col-8 {
+	flex-basis: calc((100% / 12) * 8);
+	max-width: calc((100 / 12) * 8);
+}
+
+.col-9 {
+	flex-basis: calc((100% / 12) * 9);
+	max-width: calc((100 / 12) * 9);
+}
+
+.col-10 {
+	flex-basis: calc((100% / 12) * 10);
+	max-width: calc((100 / 12) * 10);
+}
+
+.col-11 {
+	flex-basis: calc((100% / 12) * 11);
+	max-width: calc((100 / 12) * 11);
+}
+
+.col-12 {
+	flex-basis: calc((100% / 12) * 12);
+	max-width: calc((100 / 12) * 12);
+}
+
+/* OFFSET */
+
+.col-offset-1 {
+	margin-left: calc((100% / 12) * 1);
+}
+
+.col-offset-2 {
+	margin-left: calc((100% / 12) * 2);
+}
+
+.col-offset-3 {
+	margin-left: calc((100% / 12) * 3);
+}
+
+.col-offset-4 {
+	margin-left: calc((100% / 12) * 4);
+}
+
+.col-offset-5 {
+	margin-left: calc((100% / 12) * 5);
+}
+
+.col-offset-6 {
+	margin-left: calc((100% / 12) * 6);
+}
+
+.col-offset-7 {
+	margin-left: calc((100% / 12) * 7);
+}
+
+.col-offset-8 {
+	margin-left: calc((100% / 12) * 8);
+}
+
+.col-offset-9 {
+	margin-left: calc((100% / 12) * 9);
+}
+
+.col-offset-10 {
+	margin-left: calc((100% / 12) * 10);
+}
+
+.col-offset-11 {
+	margin-left: calc((100% / 12) * 11);
+}
+
+.col-offset-12 {
+	margin-left: calc((100% / 12) * 12);
+}
