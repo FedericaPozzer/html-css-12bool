@@ -1,0 +1,32 @@
+/* Boxes */
+
+.box-p {
+    aspect-ratio: 1;
+    background-color: purple;
+
+    /* border: 1px solid #ffffff; */
+}
+
+.box-white {
+    aspect-ratio: 1;
+    /* background-color: #ffffff;
+
+    border: 1px solid black;  */
+    background-color: #333333;
+}
+
+.b-t {
+    border-top: 1px solid #ffffff;
+}
+
+.b-r {
+    border-right: 1px solid #ffffff;
+}
+
+.b-b {
+    border-bottom: 1px solid #ffffff;
+}
+
+.b-l {
+    border-left: 1px solid #ffffff;
+}
