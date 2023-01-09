@@ -13,9 +13,11 @@
     color: #ffffff;
 }
 
-.box-purple {
+/* invece che creare "box-green" potevo richiamare "i box dentro ai box" facendo .box .box { ecc */
+.box-green { 
     background-color: #00e165;
     border: 1px solid 006cfa;
     color: #ffffff;
-    padding: 0.5rem
+    padding: 0.5rem;
+    border: 1px solid #006cfa;
 }
